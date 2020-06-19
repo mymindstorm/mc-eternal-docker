@@ -8,7 +8,7 @@ RUN addgroup minecraft && \
 
 WORKDIR /srv/minecraft
 
-RUN wget "https://www.curseforge.com/minecraft/modpacks/minecraft-eternal/download/2981831/file" -O server.zip && \
+RUN wget "https://media.forgecdn.net/files/2981/831/MCEternal(ServerPack1.3.6).zip" -O server.zip && \
         unzip server.zip -d server_zip && \
         mv -v ./server_zip/*/* ./ && rm -rf server.zip server_zip && \
         chown -R minecraft:minecraft /srv/minecraft

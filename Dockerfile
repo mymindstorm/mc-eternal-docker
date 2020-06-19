@@ -16,6 +16,6 @@ COPY --chown=minecraft:minecraft ./ServerStart.sh /
 
 USER minecraft
 
-EXPOSE 25565
+EXPOSE 25565 25575 8314
 VOLUME /srv/minecraft
 CMD /ServerStart.sh

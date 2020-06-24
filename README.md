@@ -12,7 +12,7 @@ Run the container and publish port 25565. You can mount `/srv/minecraft` to a vo
 $ docker volume create mc-eternal-vol
 mc-eternal-vol
 # Create container and mount Minecraft data to volume
-$ docker run -v mc-eternal-vol:/srv/minecraft -p 25565:25565 -i -d mymindstorm/mc-eternal:1.3.3
+$ docker run -v mc-eternal-vol:/srv/minecraft -p 25565:25565 -i -d mymindstorm/mc-eternal:1.3.6
 6748a532e6e3241d22f25e55140c784be0b0a3f81e123b79cfaec5c4d502b245
 # Agree to ELUA and change config
 $ cd /var/lib/docker/volumes/mc-eternal-vol/_data

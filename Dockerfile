@@ -1,4 +1,4 @@
-FROM java:8
+FROM openjdk:8u102
 
 ENV VERSION 1.3.6
 ENV JVM_OPTS -Xms2G -Xmx6G -XX:PermSize=256m -Dfml.read.Timeout=560
